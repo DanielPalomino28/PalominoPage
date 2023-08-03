@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de datos personales</title>
+  <style>
+    #principal{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+  input, label, select{
+    display: inline-block;
+    width: 50%;
+  }
+
+  body{
+    text-align: center;
+  }
+
+  #enviar{
+    font-size: 16px;
+  }
+
+  </style>
+</head>
+<body id="principal">
+  <form action="php/saludo.php" method="GET">
+    <label for="nombre">Nombres:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" name="apellido"><br><br>
+
+    <label for="fechaNacimiento">Fecha de nacimiento: </label>
+    <input type="datetime" name="fechaNacimiento" id="fechaNacimiento"><br><br>
+
+    <label for="tipoId">Tipo de identificación: </label>
+    <select id="tipoId" name="tipoId">
+      <option value="CC">Cédula de ciudadanía</option>
+      <option value="CE">Cédula de extranjería</option>
+      <option value="Pasaporte">Pasaporte</option>
+      <option value="PEP">Permiso especial de permanencia</option>
+      <option value="TE">Tarjeta de extranjería</option>
+      <option value="TI">Tarjeta de identidad</option>
+      <option value="NIT">NIT</option>
+    </select><br><br>
+        
+    <label for="numId">Número de identificación: </label>
+    <input type="number" name="numId" id="numId">
+    <br><br>
+
+    <label for="correoE">Correo electrónico</label>
+    <input type="email" name="correoE" id="correoE"><br><br>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+      <option value="Indefinido">Indefinido</option>
+    </select><br><br>
+
+    <input id="enviar" type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+
+
+
+
+
