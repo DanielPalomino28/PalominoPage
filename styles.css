@@ -20,6 +20,33 @@ header h1 {
   margin: 0;
 }
 
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999; /* Para asegurarse de que el menú aparezca por encima de otros elementos */
+  background-color: #fff; /* Color de fondo para hacerlo más visible */
+  border-radius: 5px; /* Borde redondeado */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 5px; /* Espaciado interno */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
 .rounded-image {
   border-radius: 20%;
   border: 5px solid #fff;
@@ -35,8 +62,9 @@ header h1 {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 50px; /* Agregamos un margen superior para evitar que el menú lo cubra */
 }
-
 #experience {
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -70,6 +98,42 @@ tr:nth-child(even) {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#viajes {
+  padding: 2rem;
+}
+
+#viajes h2 {
+  text-align: center;
+}
+
+#viajes table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#viajes td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+#viajes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#viajes li {
+  margin-bottom: 5px;
+}
+
+#viajes img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 footer {
