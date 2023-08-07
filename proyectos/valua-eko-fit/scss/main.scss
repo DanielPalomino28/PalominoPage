@@ -1,0 +1,191 @@
+$primary-color:#eecbdf;
+$secundary-color:#d9b4fa;
+$tertiary-color:#f176a1;
+$primary-text-color:#6984a1;
+$font-stack: 'IBM Plex Sans' , sans-serif; 
+
+@mixin flexCenter($direccion,$content,$align){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin buttonStyle{
+    button{
+        background: none;
+        border-style: none;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $primary-color;
+    font-family: $font-stack;
+}
+
+nav{
+    width: auto;
+    @include flexCenter(rom, space-between, center);
+    color: $primary-text-color;
+    padding: 15px;
+    p{
+        font-size: 1.5em;
+        padding-left: 30px;
+    }
+    .iconos{
+        display: flex;
+        gap: 15px;
+        @include buttonStyle();
+    }
+}
+
+article{
+    width: auto;
+    color: $primary-text-color;
+    @include flexCenter(rom, space-around, center);
+    .seccion-impacto{
+        @include flexCenter(column, space-evenly, flex-start);
+        padding-top: 35px;
+        gap: 25px;
+    }
+    h1{
+        font-size: 3em;
+        padding: 0px;
+        margin: 0px;
+    }   
+    p{
+        font-size: 1.5em;
+    }
+    @include buttonStyle();
+    button{
+
+        width: 12vw;
+        padding: 20px;
+        background-color: #af1e3f;
+        border-radius: 25px;
+        color: white;
+        font-size: 1em;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    img{
+        width: 45vh;
+        border-radius: 19px;
+    }
+}
+
+section{
+    width: auto;
+    height: auto;
+    padding: 60px;
+    h2{
+        color: $primary-text-color;
+        font-size: 2em;
+    }
+    .consciente-superior{
+        padding-bottom: 60px
+        h2{
+            font-weight: 300;
+            padding-bottom: 60px;
+        }
+        .seccion-tarjetas{
+            @include flexCenter(flex, space-evenly, center);
+            width: auto;
+            height: auto;
+            flex-wrap: wrap;
+            column-gap: 150px;
+            row-gap: 80px;
+        }
+        .tarjeta-producto{
+            width: 15vw;
+            height: 50vh;
+            background-color: $secundary-color;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+            .icono{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 12px;
+                svg{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+            .imagen-producto{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 12vw;
+                    height: 30vh;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+            }
+            
+        }
+        
+    }
+    .sostenible-inferior{
+        @extend .consciente-superior;
+        .tarjeta-producto{
+            background-color: $tertiary-color;
+            color: white;
+        }
+    }
+    .info-valua, .moda-consciente{
+        @extend article;
+        p{
+            font-size: 1.4em;
+        }
+    }
+}
+
+.galeria{
+    h2{
+        font-weight: bold;
+    }
+    .img-galeria{
+        @include flexCenter(row, space-between, center);
+        flex-wrap: wrap;
+        
+        img{
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            border-radius: 16px;
+            &:hover{
+                transform: scale(1.1);
+            }
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.politica-cambio{
+    p{
+        padding-left: 20px;
+        margin-bottom: 25px;
+        color: $primary-text-color;
+    }
+}
+
+footer{
+    background-color: $tertiary-color;
+    width: 100%;
+    height: auto;
+    color: aliceblue;
+    padding: 40px;
+    .redes-sociales{
+        @include flexCenter(row, center, center);
+        gap: 40px;
+    }
+
+}

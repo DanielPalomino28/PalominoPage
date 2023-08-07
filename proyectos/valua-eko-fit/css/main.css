@@ -1,0 +1,181 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eecbdf;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: auto;
+  display: flex;
+  flex-direction: rom;
+  justify-content: space-between;
+  align-items: center;
+  color: #6984a1;
+  padding: 15px;
+}
+nav p {
+  font-size: 1.5em;
+  padding-left: 30px;
+}
+nav .iconos {
+  display: flex;
+  gap: 15px;
+}
+nav .iconos button {
+  background: none;
+  border-style: none;
+}
+
+article, section .info-valua, section .moda-consciente {
+  width: auto;
+  color: #6984a1;
+  display: flex;
+  flex-direction: rom;
+  justify-content: space-around;
+  align-items: center;
+}
+article .seccion-impacto, section .info-valua .seccion-impacto, section .moda-consciente .seccion-impacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 35px;
+  gap: 25px;
+}
+article h1, section .info-valua h1, section .moda-consciente h1 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+}
+article p, section .info-valua p, section .moda-consciente p {
+  font-size: 1.5em;
+}
+article button, section .info-valua button, section .moda-consciente button {
+  background: none;
+  border-style: none;
+}
+article button, section .info-valua button, section .moda-consciente button {
+  width: 12vw;
+  padding: 20px;
+  background-color: #af1e3f;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+}
+article button:hover, section .info-valua button:hover, section .moda-consciente button:hover {
+  transform: scale(1.1);
+}
+article img, section .info-valua img, section .moda-consciente img {
+  width: 45vh;
+  border-radius: 19px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #6984a1;
+  font-size: 2em;
+}
+section .consciente-superior, section .sostenible-inferior {
+  padding-bottom: 60px h2;
+  padding-bottom-font-weight: 300;
+  padding-bottom-padding-bottom: 60px;
+}
+section .consciente-superior .seccion-tarjetas, section .sostenible-inferior .seccion-tarjetas {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+  row-gap: 80px;
+}
+section .consciente-superior .tarjeta-producto, section .sostenible-inferior .tarjeta-producto {
+  width: 15vw;
+  height: 50vh;
+  background-color: #d9b4fa;
+  color: #6984a1;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .consciente-superior .tarjeta-producto .icono, section .sostenible-inferior .tarjeta-producto .icono {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .consciente-superior .tarjeta-producto .icono svg, section .sostenible-inferior .tarjeta-producto .icono svg {
+  width: 28px;
+  height: 28px;
+}
+section .consciente-superior .tarjeta-producto .imagen-producto, section .sostenible-inferior .tarjeta-producto .imagen-producto {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .consciente-superior .tarjeta-producto .imagen-producto img, section .sostenible-inferior .tarjeta-producto .imagen-producto img {
+  width: 12vw;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+section .sostenible-inferior .tarjeta-producto {
+  background-color: #f176a1;
+  color: white;
+}
+section .info-valua p, section .moda-consciente p {
+  font-size: 1.4em;
+}
+
+.galeria h2 {
+  font-weight: bold;
+}
+.galeria .img-galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.galeria .img-galeria img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+.galeria .img-galeria img:hover {
+  transform: scale(1.1);
+}
+
+.politica-cambio p {
+  padding-left: 20px;
+  margin-bottom: 25px;
+  color: #6984a1;
+}
+
+footer {
+  background-color: #f176a1;
+  width: 100%;
+  height: auto;
+  color: aliceblue;
+  padding: 40px;
+}
+footer .redes-sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}/*# sourceMappingURL=main.css.map */
